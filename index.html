@@ -6,42 +6,36 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Device</h1>
-      <img class="logo" src="" alt="Логотип интернет магазина «Device»">
+      <h1 class="visually-hidden">Интернет магазин техники Device</h1>
+      <img class="logo" src="" alt="Логотип интернет магазина Device">
 
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="search" type="search" name="search">
         <button class="button find-button" type="submit">Найти</button>
       </form>
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Войти</a>
+      <nav class="navigation-user">
+        <ul class="navigation-user-list">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Войти</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Сравнить</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Сравнить</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Корзина</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Корзина</a>
           </li>
-        </ul>
-      </nav>
-
-      <nav class="navigation">
-        <a href="#">Каталог товаров</a>
-      </nav>
-
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#" id="delivery">Доставка</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Каталог товаров</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#" id="guarantee">Гарантия</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Доставка</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#" id="credit">Контакты</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -50,73 +44,87 @@
     <main class="main-index">
       <section>
         <img src="" alt="Квадракоптер с мощным лазером">
-        <b>Порхает как бабочка, жалит как пчела!</b>
+        <h1>Порхает как бабочка, жалит как пчела!</h1>
         <p>
           Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
         </p>
         <a href="#">Подробнее</a>
-        <ul>
-          <li>
-            <b>800  м</b>
-            <p>
-              Дальность полета
-            </p>
+        <table>
+          <tr>
+            <th>800  м</th>
+            <th>50  м</th>
+          </tr>
+          <tr>
+            <td>Дальность полета</td>
+            <td>Радиус поражения</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Продукты</h2>
+        <ul class="category-list">
+          <li class="category-card">
+            <a href="#">
+              <img class="category-card-image" src="" alt="Очки виртуальной реальности">
+              <p>Виртуальная реальность</p>
+            </a>
           </li>
-          <li>
-            <b>50  м</b>
-            <p>
-              Радиус поражения
-            </p>
+          <li class="category-card">
+            <a href="#">
+              <img class="category-card-image" src="" alt="Монопод для селфи">
+              <p>Моноподы для селфи</p>
+            </a>
+          </li>
+          <li class="category-card">
+            <a href="#">
+              <img class="category-card-image" src="" alt="Экшн-камера">
+              <p>Экшн-камеры</p>
+            </a>
+          </li>
+          <li class="category-card">
+            <a href="#">
+              <img class="category-card-image" src="" alt="Фитнес-браслет">
+              <p>Фитнес-браслеты</p>
+            </a>
+          </li>
+          <li class="category-card">
+            <a href="#">
+              <img class="category-card-image" src="" alt="Фитнес-браслет">
+              <p>Фитнес-браслеты</p>
+            </a>
+          </li>
+          <li class="category-card">
+            <a href="#">
+              <img class="category-card-image" src="" alt="Умные часы">
+              <p>Умные часы</p>
+            </a>
+          </li>
+          <li class="category-card">
+            <a href="#">
+              <img class="category-card-image" src="" alt="Квадрокоптер">
+              <p>Квадрокоптеры</p>
+            </a>
           </li>
         </ul>
       </section>
 
       <section>
-        <h2 class="visually-hidden">Продукты</h2>
-        <ul class="product-list">
-          <li class="product-card">
-              <img class="product-card-image" src="" alt="Очки виртуальной реальности">
-              <p>Виртуальная реальность</p>
-          </li>
-          <li class="product-card">
-            <img class="product-card-image" src="" alt="Монопод для селфи">
-            <p>Моноподы для селфи</p>
-          </li>
-          <li class="product-card">
-            <img class="product-card-image" src="" alt="Экшн-камера">
-            <p>Экшн-камеры</p>
-          </li>
-          <li class="product-card">
-            <img class="product-card-image" src="" alt="Фитнес-браслет">
-            <p>Фитнес-браслеты</p>
-          </li>
-          <li class="product-card">
-            <img class="product-card-image" src="" alt="Фитнес-браслет">
-            <p>Фитнес-браслеты</p>
-          </li>
-          <li class="product-card">
-            <img class="product-card-image" src="" alt="Умные часы">
-            <p>Умные часы</p>
-          </li>
-          <li class="product-card">
-            <img class="product-card-image" src="" alt="Квадрокоптер">
-            <p>Квадрокоптеры</p>
-          </li>
-      </section>
-
-      <section>
-        <button class="button" type="button" #="delivery">Доставка</button>
-        <button class="button" type="button" #="guarantee">Гарантия</button>
-        <button class="button" type="button" #="credit">Кредит</button>
+        <h2 class="visually-hidden">Преимущества</h2>
+        <button class="button" type="button">Доставка</button>
+        <button class="button" type="button">Гарантия</button>
+        <button class="button" type="button">Кредит</button>
         <div class="services-item">
-          <h2 class="section-title">Доставка</h2>
+          <h3 class="section-title">Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
       </section>
 
+      <!-- Рассмотрим эту секцию позже -->
       <section>
+        <h2 class="visually-hidden">Доставка редкого товара под заказ</h2>
         <button><img src="">Доставим редкий товар под заказ</button>
       </section>
 
@@ -138,7 +146,7 @@
           Заодно сможете проверить работоспособность покупки. </p>
         <h3>Интернет-магазин «Девайс»</h3>
           <address class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-          <a class="contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+          <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         <h3 class="contacts-subtitle">Время работы</h3>
         <ul class="contacts-schedule">
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
@@ -167,19 +175,17 @@
       </div>
 
       <div>
-       <nav class="navigation">
-         <ul class="navigation-list">
-           <li class="navigation-item">
-             <a class="navigation-link" href="#" id="delivery">Доставка</a>
-           </li>
-           <li class="navigation-item">
-             <a class="navigation-link" href="#" id="guarantee">Гарантия</a>
-           </li>
-           <li class="navigation-item">
-            <a class="navigation-link" href="#" id="credit">Контакты</a>
-           </li>
-         </ul>
-       </nav>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+         <li class="navigation-item">
+           <a class="navigation-link" href="#">Гарантия</a>
+         </li>
+         <li class="navigation-item">
+          <a class="navigation-link" href="#">Контакты</a>
+         </li>
+        </ul>
       </div>
 
       <ul class="footer-social-list">
@@ -201,9 +207,9 @@
       </ul>
 
       <div>
-        <a class="contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/"><img class="autograph" src="" alt="Автор «HTML-Academy»"></a>
-       </div>
+        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+        <a href="https://htmlacademy.ru/"><img class="autograph" src="" alt="Автор HTML-Academy"></a>
+      </div>
 
     </footer>
 
