@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+/* header */
+
+.page-header {
+  color: inherit;
+  background-color: #FFE17F;
+}
+
+/* .search-form {}                  ПРОПИСАТЬ СТИЛИ ДЛЯ ФОРМЫ */
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-user-link {
+font-family: "Rubik", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+text-decoration: none;
+}
+
+.navigation-link {
+font-family: "Raleway", sans-serif;
+font-style: normal;
+line-height: 21px;
+font-weight: 800;
+letter-spacing: 0.2em;
+text-align: center;
+color: #000000;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+/* main */
+
+.number {
+font-family: "Rubik", sans-serif;
+line-height: 30px;
+font-style: normal;
+font-weight: 700;
+font-size: 180px;
+color: #FFFFFF;
+}
+
+.main-title {
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 50px;
+}
+
+.text {
+  color: #444444;
+}
+
+.specification th {
+font-weight: 400;
+font-size: 36px;
+}
+
+.specification td {
+font-size: 16px;
+color: #444444;
+}
+
+.category-card-image {
+background-color: #FFE17F;
+}
+
+.category-list {
+list-style-type: none;
+}
+
+.category-card-link {
+text-decoration: none;
+color: #000000;
+}
+
+.category-card-link p {
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 24px;
+}
+
+.advantage-button {
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
+
+
+border: none;
+cursor: pointer;
+background-color: #FFE17F;
+}
+
+.advantage-button.active {
+color: #FFE17F;
+background-color: #000000;
+}
+
+.advantage {
+background-color: #F0F0F0;
+}
+
+/* .delivery-button {
+  background-color: #F0F0F0;
+}
+
+.icons-car {
+  background-color: #FFE17F;
+}
+
+.icons-notice {
+  border-radius: 50px;
+  background: rgba(220, 220, 220, 0.5);
+} */
+
+.delivery-item li {
+color: #FFC700;
+}
+
+.delivery-list span{
+font-family: 'Rubik', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+
+color: #000000;
+}
+
+.subtitle {
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+color: #444444;
+}
+
+.contacts-address-text {
+font-family: "Rubik", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+}
+
+.contacts-phone {
+font-family: 'Rubik', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+text-decoration-line: underline;
+color: #444444;
+}
+
+.contacts-schedule {
+font-family: 'Rubik', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+color: #444444;
+
+list-style-type: none;
+}
+
+.main-button {
+line-height: 21px;
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 0.2em;
+
+background: #FFE17F;
+color: #000000;
+}
+
+.section-distribution {
+  background-color: #F0F0F0;;
+}
+
+
+/* форма */
+
+
+/* footer */
+.page-footer {
+color: #FFFFFF;
+background-color: #444444;
+}
+
+.text-footer {
+color: #FFFFFF;}
+
+.logo-footer {
+/* Можно ли изменить цвет у svg? Или нужно желтое лого экспортировать из Фигмы? */
+}
+
+.social-button {
+background: rgba(255, 255, 255, 0.3);
+border-radius: 50%;
+}
+
+.footer-social-list {
+list-style-type: none;
+}
+
+
+
+/* catalog */
+.breadcrumbs-item {
+list-style-type: none;
+}
+
+.breadcrumbs-item a{
+font-size: 16px;
+line-height: 20px;
+text-decoration: none;
+color: #000000;
+}
+
+.catalog-products {
+background-color: #F0F0F0;
+}
+
+.filter-title {
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+}
+
+/* фильтр - форма */
+
+.catalog-filter-title {
+font-family: 'Rubik', sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+}
+
+.catalog-filter-item {
+font-size: 16px;
+line-height: 20px;
+
+list-style-type: none;
+}
+
+.button {
+border: none;
+}
+
+.product-card {
+list-style-type: none;
+}
+
+.product-card-link {
+text-decoration: none;
+color: #000000;
+}
+
+.product-card-price {
+line-height: 21px;
+color: #444444;
+}
+
+.product-card-title {
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: -0.02em;
+}
+
+.pagination-show-more {
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+
+border: 3px solid #E5E5E5;
+}
+
+.pagination {
+list-style-type: none;
+}
+
+.pagination-back {
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+
+color: #444444;
+opacity: 0.3;
+}
+
+.pagination-link {
+font-size: 16px;
+line-height: 20px;
+text-decoration: none;
+
+color: #444444;
+opacity: 0.3;
+}
+
+.pagination-current {
+opacity: 0.6;
+}
+
+.pagination-next {
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+text-decoration: none;
+
+color: #000000;
+}
