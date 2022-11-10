@@ -15,8 +15,8 @@
           <div class="navigation-section">
             <div class="navigation-section-item">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <img class="icons" src="images/icons-loupe.svg" width="16px" height="16px">
-                <input class="search" placeholder="Текст поиска" type="search" name="search">
+                <img class="search-icon" src="images/icons-loupe.svg" width="16px" height="16px">
+                <input class="search" placeholder="Поиск по сайту" type="search" name="search">
                 <button class="find-button" type="submit">Найти</button>
               </form>
               <div class="navigation-top-section-enter">
@@ -39,15 +39,18 @@
                 <a class="navigation-user-link" href="#">Сравнить</a>
               </div>
 
-              <div>
+              <div class="navigation-section-item-link">
                 <img class="icons" src="images/icons-basket.svg" width="16px" height="14px">
+                <div class="badge">
+                   2
+                </div>
                 <a class="navigation-user-link" href="#">Корзина</a>
               </div>
             </div>
           </div>
 
           <nav class="navigation-section">
-            <div class="navigation-section-item">
+            <div class="navigation-section-item navigation-section-short">
               <a class="navigation-link" href="catalog.html">Каталог товаров</a>
               <img class="plus" src="images/icons-batton-plus.svg" width="50px" height="50px">
             </div>
@@ -75,19 +78,9 @@
             <li class="breadcrumbs-item">
               <a href="index.html">Главная</a>
             </li>
-            <img
-              class="icons-arrow"
-              src="images/icons-switch.svg"
-              width="4px"
-              height="7px"/>
             <li class="breadcrumbs-item">
               <a href="#">Каталог товаров</a>
             </li>
-            <img
-              class="icons-arrow"
-              src="images/icons-switch.svg"
-              width="4px"
-              height="7px"/>
             <li class="breadcrumbs-item">
               <a>Моноподы для селфи</a>
             </li>
@@ -99,8 +92,6 @@
           <div class="filter-wrapper">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <h3 class="filter-title">Фильтр</h3>
-
-            <hr />
 
             <form
               class="catalog-filter"
@@ -190,16 +181,18 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="main-button button catalog-filter-button" type="submit">Показать</button>
+              <button class="main-button button catalog-filter-button" type="submit">
+                <div class="button-background"></div>
+                <div class="button-title">
+                  Показать
+                </div>
+              </button>
             </form>
           </div>
 
-
-
           <div class="catalog-wrapper">
             <div class="assortment">
-              <h3 class="filter-title">Сортировка:</h3>
-              <!-- sort-down -->
+              <h3 class="assortment-title">Сортировка:</h3>
               <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
                 <option value="cheap">Сначала дешёвые</option>
@@ -232,9 +225,11 @@
                       alt="Cелфи-палка"
                       width="360px"
                       height="380px"/>
-                    <h3 class="product-card-title">Любительская селфи-палка</h3>
+                      <div class="product-card-description">
+                        <h3 class="product-card-title">Любительская селфи-палка</h3>
+                        <p class="product-card-price">500 ₽</p>
+                      </div>
                   </a>
-                  <p class="product-card-price">500 ₽</p>
                 </li>
 
                 <li class="product-card">
@@ -246,9 +241,11 @@
                       width="360px"
                       height="380px"
                     />
-                    <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                    <div class="product-card-description">
+                      <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                      <p class="product-card-price">1 500 ₽</p>
+                    </div>
                   </a>
-                  <p class="product-card-price">1 500 ₽</p>
                 </li>
 
                 <li class="product-card">
@@ -260,9 +257,11 @@
                       width="360px"
                       height="380px"
                     />
-                    <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                    <div class="product-card-description">
+                      <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                      <p class="product-card-price">2 500 ₽</p>
+                    </div>
                   </a>
-                  <p class="product-card-price">2 500 ₽</p>
                 </li>
 
                 <li class="product-card">
@@ -274,9 +273,11 @@
                       width="360px"
                       height="380px"
                     />
-                    <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                    <div class="product-card-description">
+                      <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                      <p class="product-card-price">1 500 ₽</p>
+                    </div>
                   </a>
-                  <p class="product-card-price">1 500 ₽</p>
                 </li>
               </ul>
 
@@ -303,7 +304,7 @@
 
     <footer class="page-footer">
       <div class="page-footer-wrapper wrapper">
-        <img class="logo logo-footer" src="images/logo-device-yellow.svg" width="145px" height="36px" alt="Логотип интернет магазина Device">
+        <img class="logo-footer" src="images/logo-device-yellow.svg" width="145px" height="36px" alt="Логотип интернет магазина Device">
         <div class="footer-column">
           <div class="footer-section footer-section-left">
             <address class="contacts-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
@@ -349,7 +350,7 @@
           </div>
 
           <div class="footer-section footer-section-right">
-            <a class="contacts-footer" href="tel:88128121212">+7 (812) 812-12-12</a>
+            <a class="contacts-footer" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
             <a href="https://htmlacademy.ru/"><img class="autograph" src="images/logo-html-academy.svg" width="115" height="33" alt="Автор HTML-Academy"></a>
           </div>
         </div>
