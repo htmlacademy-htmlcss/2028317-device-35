@@ -14,8 +14,8 @@
           <div class="navigation-section">
             <div class="navigation-section-item">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="search" placeholder="Поиск по сайту" type="search" name="search">
-                <img class="search-icon" src="images/icons-loupe.svg" width="16px" height="16px">
+                <input class="search" placeholder="Поиск по сайту" type="search" name="search" id="search">
+                <label for="search"><img class="search-icon" src="images/icons-loupe.svg" width="16px" height="16px"></label>
                 <button class="find-button" type="submit">Найти</button>
               </form>
               <a href="#" class="navigation-top-section-enter status">
@@ -30,21 +30,81 @@
                 <span class="navigation-user-link">Сравнить</span>
               </a>
 
-              <a href="#" class="navigation-section-item-link status">
-                <img class="icons" src="images/icons-basket.svg" width="16px" height="14px">
-                <div class="badge">
-                   2
+              <div class="popover-wrapper">
+                <a href="#" class="navigation-section-item-link status">
+                  <img class="icons" src="images/icons-basket.svg" width="16px" height="14px">
+                  <div class="badge">
+                    2
+                  </div>
+                  <span class="navigation-user-link">Корзина</span>
+                </a>
+                <div class="popover-content">
+                  <div class="popover-content-item basket-item">
+                    <a href="#" class="basket-item-description">
+                      <img src="images/product-amateur-selfie-stick.jpg" alt="">
+                      <span>
+                        Любительская селфи-палка
+                      </span>
+                    </a>
+                    <button class="basket-item-close">
+                      <img src="images/icon-cross-white.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="popover-content-item basket-item">
+                    <a href="#" class="basket-item-description">
+                      <img src="images/product-professional-selfie-stick.jpg" alt="">
+                      <span>
+                        Профессиональная селфи-палка
+                      </span>
+                    </a>
+                    <button class="basket-item-close">
+                      <img src="images/icon-cross-white.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="popover-content-result">
+                    <span>
+                      Товаров: 2
+                    </span>
+                    <span>
+                      Сумма: 2000 ₽
+                    </span>
+                  </div>
+                  <div class="popover-content-button-wrapper">
+                    <a href="#" class="popover-content-button">
+                      <span>Открыть корзину</span>
+                    </a>
+                  </div>
                 </div>
-                <span class="navigation-user-link">Корзина</span>
-              </a>
+              </div>
             </div>
           </div>
 
-          <nav class="navigation-section">
-            <a href="catalog.html" class="navigation-section-item navigation-section-short status">
-              <span class="navigation-link">Каталог товаров</span>
-              <img class="plus" src="images/icons-batton-plus.svg" width="50px" height="50px">
-            </a>
+          <nav class="navigation-section navigation-section-bottom">
+            <div class="catalog-item">
+              <a href="catalog.html" class="navigation-section-item navigation-section-short">
+                <span class="navigation-link ">Каталог товаров</span>
+                <div class="catalog-item-image">
+
+                </div>
+              </a>
+              <div class="subcatalog">
+                <div class="subcatalog-item">
+                  <div class="subcatalog-item-wrapper"><a class="subcatalog-link" href="#">Виртуальная реальность</a></div>
+                  <div class="subcatalog-item-wrapper"><a class="subcatalog-link" href="#">Моноподы для селфи</a></div>
+                  <div class="subcatalog-item-wrapper"><a class="subcatalog-link" href="#">Экшн-камеры</a></div>
+                </div>
+
+                <div class="subcatalog-item">
+                  <div class="subcatalog-item-wrapper"><a class="subcatalog-link" href="#">Фитнес-браслеты</a></div>
+                  <div class="subcatalog-item-wrapper"><a class="subcatalog-link" href="#">Умные часы</a></div>
+                </div>
+
+                <div class="subcatalog-item">
+                  <div class="subcatalog-item-wrapper"><a class="subcatalog-link" href="#">Квадрокоптеры</a></div>
+                </div>
+              </div>
+            </div>
+
 
             <ul class="navigation-section-item navigation-section-wide">
               <li class="navigation-item">
@@ -66,9 +126,7 @@
       <section class="slider wrapper">
         <div class="slider-item slider-item-active">
           <div class="slider-img">
-            <img class="arrow arrow-left status" src="images/icons-arrow-left.svg" width="20px" height="60px">
             <img src="images/slider-quadrocopter.png" width="560px" height="560px" alt="Квадракоптер с мощным лазером">
-            <img class="arrow arrow-right status" src="images/icons-arrow-right.svg" width="20px" height="60px">
           </div>
           <div class="slider-item-section">
             <div class="slider-number">
@@ -180,6 +238,14 @@
           <div class="status"></div>
           <div class="status"></div>
         </div>
+        <div class="slider-arrows">
+          <button class="arrow arrow-left status">
+            <img src="images/icons-arrow-left.svg" width="20px" height="60px">
+          </button>
+          <button class="arrow arrow-right status">
+            <img src="images/icons-arrow-right.svg" width="20px" height="60px">
+          </button>
+        </div>
       </section>
 
       <section class="category wrapper">
@@ -256,8 +322,35 @@
               </div>
             </div>
 
-            <!-- <div class="advantage-item"></div>
-            <div class="advantage-item"></div> -->
+            <div class="advantage-item advantage-item-not-active">
+              <div>
+                <h3 class="main-title advantage-main-title">Гарантия</h3>
+                <div class="advantage-item-description">
+                  Если из-за возгорания купленного у нас товара у вас
+                  сгорит дом — не переживайте, мы выдадим вам новый.
+                  Товар, не дом, конечно же.
+                </div>
+              </div>
+              <div>
+                <img class="advantage-image" src="images/advantage-guarantee.svg" width="136" height="164" alt="Доставщик">
+              </div>
+            </div>
+
+
+            <div class="advantage-item advantage-item-not-active">
+              <div>
+                <h3 class="main-title advantage-main-title">Кредит</h3>
+                <div class="advantage-item-description">
+                  Залезть в долговую яму стало проще!
+                  Кредитные консультанты подберут для вас
+                  наиболее выгодные условия кредита.
+                  Выгодные для банка, разумеется.
+                </div>
+              </div>
+              <div>
+                <img class="advantage-image" src="images/advantage-credit.svg" width="136" height="164" alt="Доставщик">
+              </div>
+            </div>
 
           </div>
         </div>
@@ -382,6 +475,64 @@
       </div>
 
     </footer>
+
+    <div class="delivery-modal-wrapper" style="display: none;">
+      <div class="delivery-modal">
+        <div class="delivery-modal-header">
+          <span class="delivery-modal-header-title">
+            Доставка под заказ
+          </span>
+          <button class="delivery-modal-header-close">
+            <img src="images/icon-cross.svg" alt="Закрыть">
+          </button>
+        </div>
+        <div class="delivery-modal-form">
+          <div class="delivery-modal-form-field name-field">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Введите имя" id="name">
+            <img src="images/icon-user.svg" alt="">
+          </div>
+          <div class="delivery-modal-form-field email-field error">
+            <label for="email">Ваш email:</label>
+            <input type="email" name="email" placeholder="Введите email" id="email">
+            <img src="images/icon-email.svg" alt="">
+            <span class="field-error">
+              Забавный у вас адрес
+            </span>
+          </div>
+          <div class="delivery-modal-form-field deliver-field">
+            <label for="itemsToDeliver">Что нужно привезти:</label>
+            <input type="text" name="itemsToDeliver" id="itemsToDeliver" placeholder="В свободной форме">
+          </div>
+          <div class="delivery-modal-form-counter counter">
+            <div class="counter-title">
+              Количество:
+              <div class="counter-popover-wrapper">
+                <span>i</span>
+                <div class="counter-popover-content">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                  к провозу багажа.
+                </div>
+              </div>
+            </div>
+            <div class="counter-wrapper error">
+              <button class="counter-button counter-minus">
+                <img src="images/icon-minus.svg" alt="">
+              </button>
+              <div class="counter-number">
+                1
+              </div>
+              <button class="counter-button counter-plus">
+                <img src="images/icon-plus.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="delivery-modal-button button">
+          Отправить
+        </button>
+      </div>
+    </div>
 
   </body>
 </html>
