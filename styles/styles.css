@@ -1676,6 +1676,10 @@ body {
 
 /* modal */
 
+.delivery-modal-wrapper.modal-closed {
+  display: none;
+}
+
 .delivery-modal-wrapper {
   position: fixed;
   width: 100%;
@@ -1880,6 +1884,24 @@ body {
 
 .counter-number {
   padding: 22px;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  width: 60px;
+  background-color: transparent;
+}
+
+.counter-number:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 .delivery-modal-button {
