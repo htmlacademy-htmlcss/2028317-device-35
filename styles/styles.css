@@ -90,7 +90,7 @@ body {
   box-sizing: border-box;
   letter-spacing: 0.5px;
   padding-left: 46px;
-  width: 100%;
+  width: 517px;
   border: 2px solid black;
   border-radius: 30px;
   border-top-right-radius: 0;
@@ -118,7 +118,7 @@ body {
 .search-icon {
   position: absolute;
   left: 14px;
-  top: 11px;
+  top: 12px;
 }
 
 .search::placeholder {
@@ -133,9 +133,10 @@ body {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   display: block;
-  margin-left: auto;
   background: transparent;
-  padding: 0 55px;
+  padding: 0 15px;
+  width: 160px;
+  box-sizing: border-box;
 }
 
 .find-button:hover {
@@ -172,6 +173,20 @@ body {
 }
 
 .status:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+
+
+.status-link[href]:hover {
+  opacity: 0.6;
+}
+
+.status-lin[href]:active {
+  opacity: 0.3;
+}
+
+.status-lin[href]:focus {
   outline: 2px solid #AF4FFF;
 }
 
@@ -1752,7 +1767,7 @@ body {
   background: #DCDCDC;
 }
 
-.delivery-modal-form-field:hover input:focus {
+.delivery-modal-form-field input:focus {
   outline: 2px solid #AF4FFF;
 }
 
@@ -1850,6 +1865,19 @@ body {
   cursor: pointer;
 }
 
+.counter-button:hover {
+  background: #EBEBEB;
+  opacity: .6;
+}
+
+.counter-button:active {
+  opacity: .3;
+}
+
+.counter-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .counter-number {
   padding: 22px;
 }
@@ -1887,6 +1915,15 @@ body {
   border-color: transparent transparent black transparent;
 }
 
+.popover-content:after {
+  z-index: -2;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: -20px;
+  height: 100%;
+}
+
 .popover-wrapper:hover .popover-content {
   z-index: 10;
   opacity: 1;
@@ -1902,15 +1939,29 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.basket-item:hover {
+.basket-item-description:hover {
   opacity: .6;
 }
 
-.basket-item:active {
+.basket-item-description:active {
   opacity: .3;
 }
 
-.basket-item:focus .basket-item-description {
+.basket-item-description:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+
+
+.basket-item-close {
+  opacity: .6;
+}
+
+.basket-item-close {
+  opacity: .3;
+}
+
+.basket-item-close {
   outline: 2px solid #AF4FFF;
 }
 
