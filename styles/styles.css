@@ -356,13 +356,15 @@ body {
   gap: 20px;
 }
 
-.slider-dots div {
+.dots-button {
   box-sizing: border-box;
   width: 12px;
   height: 12px;
+  padding: 0;
   border-radius: 50%;
   border: 2px solid black;
   background-color: white;
+  outline: none;
 }
 
 .slider-dots .active {
@@ -830,6 +832,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
+  position: relative;
+  z-index: 1;
 }
 
 .button:hover {
@@ -846,11 +850,6 @@ body {
 
 .button:disabled {
   opacity: .3;
-}
-
-.button-title {
-  position: relative;
-  z-index: 1;
 }
 
 .section-distribution {
@@ -1199,6 +1198,8 @@ body {
 .range-bar {
   position: absolute;
   height: 4px;
+  left: 0;
+  width: 136px;
   background-color: #000000;
 }
 
@@ -1247,7 +1248,7 @@ body {
 }
 
 .range-input {
-  width: 15px;
+  width: 37px;
   padding: 0 2px;
   font: inherit;
   text-align: center;
