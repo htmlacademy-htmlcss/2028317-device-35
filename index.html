@@ -17,23 +17,23 @@
             <div class="navigation-section-item">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
                 <input class="search" placeholder="Поиск по сайту" type="search" name="search" id="search">
-                <label for="search"><img alt="Лупа." class="search-icon" src="images/icons-loupe.svg" width="16" height="16"></label>
+                <label for="search"><span class="search-icon"></span></label>
                 <button class="find-button" type="submit">Найти</button>
               </form>
-              <a href="#" class="navigation-top-section-enter status">
-                <img alt="Профиль." class="icons" src="images/icons-user.svg" width="13" height="12">
+              <a href="#" class="navigation-top-section status">
+                <div class="profile-icon"></div>
                 <span class="navigation-user-link">Войти</span>
               </a>
             </div>
             <div class="navigation-section-item">
-              <a href="#" class="status">
-                <img alt="Сравнить." class="icons" src="images/icons-compare.svg" width="10" height="12">
+              <a href="#" class="navigation-top-section status">
+                <div class="icons compare-icon"></div>
                 <span class="navigation-user-link">Сравнить</span>
               </a>
   <!-- popover -->
               <div class="popover-wrapper">
-                <a href="#" class="navigation-section-item-link status">
-                  <img alt="Корзина." class="icons" src="images/icons-basket.svg" width="16" height="14">
+                <a href="#" class="navigation-section-item-link navigation-top-section status">
+                  <div class="basket-icon"></div>
                   <div class="badge">2</div>
                   <span class="navigation-user-link">Корзина</span>
                 </a>
@@ -43,18 +43,14 @@
                       <img src="images/product-amateur-selfie-stick.jpg" alt="Любительская селфи-палка.">
                       <span>Любительская селфи-палка</span>
                     </a>
-                    <button class="basket-item-close" type="button">
-                      <img src="images/icon-cross-white.svg" alt="Стрелка.">
-                    </button>
+                    <button class="basket-item-close" type="button"></button>
                   </div>
                   <div class="popover-content-item basket-item">
                     <a href="#" class="basket-item-description">
                       <img src="images/product-professional-selfie-stick.jpg" alt="Профессиональная селфи-палка.">
                       <span>Профессиональная селфи-палка</span>
                     </a>
-                    <button class="basket-item-close" type="button">
-                      <img src="images/icon-cross-white.svg" alt="Стрелка.">
-                    </button>
+                    <button class="basket-item-close" type="button"></button>
                   </div>
                   <div class="popover-content-result">
                     <span>Товаров: 2</span>
@@ -72,7 +68,7 @@
           <nav class="navigation-section navigation-section-bottom">
             <div class="catalog-item">
               <a href="catalog.html" class="navigation-section-item navigation-section-short">
-                <span class="navigation-link ">Каталог товаров</span>
+                <span class="navigation-link">Каталог товаров</span>
                 <div class="catalog-item-image"></div>
               </a>
 <!-- subcatalog -->
@@ -172,16 +168,14 @@
           </div>
         </div>
         <div class="slider-dots">
-          <button type="button" class="dots-button active status"></button>
-          <button type="button" class="dots-button status"></button>
-          <button type="button" class="dots-button status"></button>
+          <button type="button" class="dots-button active status"><span class="visually-hidden">Следующий слайд.</span></button>
+          <button type="button" class="dots-button status"><span class="visually-hidden">Следующий слайд.</span></button>
+          <button type="button" class="dots-button status"><span class="visually-hidden">Пследний слайд.</span></button>
         </div>
         <div class="slider-arrows">
           <button class="arrow arrow-left status" type="button">
-            <img alt="Назад." src="images/icons-arrow-left.svg" width="20" height="60">
           </button>
           <button class="arrow arrow-right status" type="button">
-            <img alt="Вперед." src="images/icons-arrow-right.svg" width="20" height="60">
           </button>
         </div>
       </section>
@@ -260,27 +254,23 @@
                 <h3 class="main-title advantage-main-title">Кредит</h3>
                 <div class="advantage-item-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</div>
               </div>
-              <div>
-                <img class="advantage-image" src="images/advantage-credit.svg" width="136" height="164" alt="Доставщик.">
-              </div>
+              <img class="advantage-image" src="images/advantage-credit.svg" width="136" height="164" alt="Доставщик.">
             </div>
           </div>
         </div>
       </section>
       <button class="delivery-section wrapper" type="button">
-        <div class="delivery-icon-wrapper">
-          <img alt="Доставка." class="delivery-icon" src="images/icons-car.svg" width="47" height="31">
-        </div>
-        <div class="delivery-section-item">Доставим редкий товар под заказ</div>
-        <div class="delivery-notice-wrapper">
-          <div class="delivery-notice">
-            <img alt="Уведомление." src="images/icons-notice.svg">
-          </div>
-        </div>
+        <span class="delivery-icon-wrapper">
+          <span class="delivery-icon"></span>
+        </span>
+        <span class="delivery-section-item">Доставим редкий товар под заказ</span>
+        <span class="delivery-notice-wrapper">
+          <span class="delivery-notice"></span>
+        </span>
       </button>
       <section class="section-contact wrapper">
         <div class="contacts">
-          <img alt="Линия." src="images/icons-line-black.svg" width="84" height="7">
+          <div class="line"></div>
           <h2 class="main-title contact-title">О нас</h2>
           <p class="text contacts-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="text contacts-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -292,7 +282,7 @@
           <a class="main-button button section-contact-button" href="#">Подробнее о нас</a>
         </div>
         <div class="contacts">
-          <img alt="Линия." src="images/icons-line-black.svg" width="84" height="7">
+          <div class="line"></div>
           <h2 class="main-title">Контакты</h2>
           <p class="text contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
           <h3 class="subtitle">Интернет-магазин «Девайс»</h3>
@@ -318,7 +308,7 @@
               <input class="subscribe-button" type="submit" value="Подписаться">
             </form>
             <div class="section-distribution-free">
-              <img alt="Галочка." class="icons" src="images/icons-tick-green.svg" width="16" height="16">
+              <div class="tick-icon"></div>
               <div>Это бесплатно</div>
             </div>
           </div>
@@ -350,19 +340,19 @@
             <li class="footer-social-item">
               <a class="social-button status-social" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
-                <img alt="Телеграм." src="images/social-networks-telegram.svg" width="14" height="12">
+                <div class="telegram-icon"></div>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="social-button status-social" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
-                <img alt="Ю-Туб." src="images/social-networks-you-tube.svg" width="16" height="11">
+                <div class="youtube-icon"></div>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="social-button status-social" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Twitter</span>
-                <img alt="Твиттер." src="images/social-networks-twitter.svg" width="15" height="14">
+                <div class="twitter-icon"></div>
               </a>
             </li>
           </ul>
@@ -377,20 +367,18 @@
       <div class="delivery-modal">
         <div class="delivery-modal-header">
           <span class="delivery-modal-header-title">Доставка под заказ</span>
-          <button class="delivery-modal-header-close" type="button">
-            <img src="images/icon-cross.svg" alt="Закрыть.">
-          </button>
+          <button class="delivery-modal-header-close" type="button"></button>
         </div>
         <div class="delivery-modal-form">
           <div class="delivery-modal-form-field name-field">
             <label for="name">Ваше имя:</label>
-            <input type="text" name="name" placeholder="Введите имя" id="name">
-            <img src="images/icon-user.svg" alt="Профиль.">
+            <input required type="text" name="name" placeholder="Введите имя" id="name">
+            <div class="user-icon field-icon"></div>
           </div>
           <div class="delivery-modal-form-field email-field error">
             <label for="email">Ваш email:</label>
             <input type="email" name="email" placeholder="Введите email" id="email">
-            <img src="images/icon-email.svg" alt="Почта.">
+            <div class="email-icon field-icon"></div>
             <span class="field-error">Забавный у вас адрес</span>
           </div>
           <div class="delivery-modal-form-field deliver-field">
@@ -408,7 +396,7 @@
               <button class="counter-button counter-minus" type="button">
                 <img src="images/icon-minus.svg" alt="Минус.">
               </button>
-              <input class="counter-number" type="number" value="1"  />
+              <input class="counter-number" type="number" value="1">
               <button class="counter-button counter-plus" type="button">
                 <img src="images/icon-plus.svg" alt="Плюс.">
               </button>
