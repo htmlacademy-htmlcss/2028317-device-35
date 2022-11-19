@@ -894,7 +894,7 @@ body {
 
 .main-button {
   position: relative;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1482,7 +1482,7 @@ body {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1808,7 +1808,7 @@ body {
 }
 
 .delivery-modal-header-title {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-size: 50px;
   line-height: 50px;
@@ -1885,7 +1885,7 @@ body {
 }
 
 .delivery-modal-form-field input {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1899,7 +1899,7 @@ body {
 }
 
 .delivery-modal-form-field label {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1917,7 +1917,7 @@ body {
 }
 
 .field-error {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1926,7 +1926,7 @@ body {
 }
 
 .counter-title {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1970,6 +1970,18 @@ body {
   outline: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.plus-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icon-plus.svg');
+}
+
+.minus-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icon-minus.svg');
 }
 
 .counter-button:hover {
@@ -2142,7 +2154,7 @@ input[type="number"] {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  font-family: 'Rubik', serif;
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2165,7 +2177,7 @@ input[type="number"] {
   border: none;
   text-transform: uppercase;
   color: black;
-  font-family: 'Raleway', serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
