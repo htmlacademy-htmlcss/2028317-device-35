@@ -35,6 +35,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  min-width: 1160px;
 
   background-color: #FFFFFF;
   color: #000000;
@@ -119,6 +120,51 @@ body {
   position: absolute;
   left: 14px;
   top: 12px;
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icons-loupe.svg');
+}
+
+.compare-icon {
+  width: 10px;
+  height: 12px;
+  background-image: url('../images/icons-compare.svg');
+}
+
+.profile-icon {
+  background-image: url(../images/icons-user.svg);
+  width: 14px;
+  height: 12px;
+}
+
+.basket-icon {
+  width: 16px;
+  height: 14px;
+  background-image: url('../images/icons-basket.svg');
+}
+
+.tick-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icons-tick-green.svg');
+}
+
+.telegram-icon {
+  width: 14px;
+  height: 12px;
+  background-image: url('../images/social-networks-telegram.svg');
+}
+
+.youtube-icon {
+  width: 16px;
+  height: 11px;
+  background-image: url('../images/social-networks-you-tube.svg');
+}
+
+.twitter-icon {
+  width: 15px;
+  height: 14px;
+  background-image: url('../images/social-networks-twitter.svg');
 }
 
 .search::placeholder {
@@ -137,6 +183,7 @@ body {
   padding: 0 15px;
   width: 160px;
   box-sizing: border-box;
+  margin: 0;
 }
 
 .find-button:hover {
@@ -250,7 +297,7 @@ body {
   background-color: white;
 }
 
-.navigation-top-section-enter {
+.navigation-top-section {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -356,13 +403,15 @@ body {
   gap: 20px;
 }
 
-.slider-dots div {
+.dots-button {
   box-sizing: border-box;
   width: 12px;
   height: 12px;
+  padding: 0;
   border-radius: 50%;
   border: 2px solid black;
   background-color: white;
+  outline: none;
 }
 
 .slider-dots .active {
@@ -428,6 +477,36 @@ body {
   border: none;
   outline: none;
   background-color: transparent;
+}
+
+.arrow-right {
+  width: 20px;
+  height: 60px;
+  background-image: url('../images/icons-arrow-right.svg');
+}
+
+.arrow-left {
+  width: 20px;
+  height: 60px;
+  background-image: url('../images/icons-arrow-left.svg');
+}
+
+.user-icon {
+  width: 13px;
+  height: 12px;
+  background-image: url('../images/icon-user.svg');
+}
+
+.email-icon {
+  width: 15px;
+  height: 12px;
+  background-image: url('../images/icon-email.svg');
+}
+
+.line {
+  width: 84px;
+  height: 7px;
+  background-color: black;
 }
 
 .main-title {
@@ -688,6 +767,12 @@ body {
   background: #FFE17F;
 }
 
+.delivery-icon {
+  width: 47px;
+  height: 31px;
+  background-image: url('../images/icons-car.svg');
+}
+
 .delivery-section-item {
   display: flex;
   align-items: center;
@@ -715,6 +800,9 @@ body {
   justify-content: center;
   border-radius: 50%;
   background: rgba(220, 220, 220, 0.5);
+  background-image: url('../images/icons-notice.svg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .delivery-item {
@@ -830,6 +918,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
+  position: relative;
+  z-index: 1;
 }
 
 .button:hover {
@@ -846,11 +936,6 @@ body {
 
 .button:disabled {
   opacity: .3;
-}
-
-.button-title {
-  position: relative;
-  z-index: 1;
 }
 
 .section-distribution {
@@ -899,6 +984,19 @@ body {
   line-height: 30px;
   font-weight: 400;
   border-bottom: 3px solid #C4C4C4;
+  margin: 0;
+}
+
+.email-input:hover {
+  opacity: .6;
+}
+
+.email-input:active {
+  opacity: .3;
+}
+
+.email-input:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .subscribe-button {
@@ -1199,6 +1297,8 @@ body {
 .range-bar {
   position: absolute;
   height: 4px;
+  left: 0;
+  width: 136px;
   background-color: #000000;
 }
 
@@ -1247,7 +1347,7 @@ body {
 }
 
 .range-input {
-  width: 15px;
+  width: 37px;
   padding: 0 2px;
   font: inherit;
   text-align: center;
@@ -1716,6 +1816,9 @@ body {
 }
 
 .delivery-modal-header-close {
+  width: 26px;
+  height: 26px;
+  background-image: url('../images/icon-cross.svg');
   outline: none;
   border: none;
   background-color: transparent;
@@ -1775,7 +1878,7 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-.delivery-modal-form-field img {
+.delivery-modal-form-field .field-icon {
   position: absolute;
   right: 20px;
   top: 64px;
@@ -1946,7 +2049,7 @@ input[type="number"] {
   height: 100%;
 }
 
-.popover-wrapper:hover .popover-content {
+.popover-wrapper:active .popover-content {
   z-index: 10;
   opacity: 1;
   visibility: visible;
@@ -1973,10 +2076,11 @@ input[type="number"] {
   outline: 2px solid #AF4FFF;
 }
 
-
-
 .basket-item-close {
   opacity: .6;
+  background-image: url('../images/icon-cross-white.svg');
+  width: 10px;
+  height: 11px;
 }
 
 .basket-item-close {
