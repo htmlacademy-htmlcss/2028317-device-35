@@ -495,7 +495,7 @@ body {
   background-image: url('../images/icons-arrow-left.svg');
 }
 
-.line {
+.contacts-line {
   width: 84px;
   height: 7px;
   background-color: black;
@@ -731,14 +731,15 @@ body {
 .delivery-section {
   cursor: pointer;
   display: flex;
+  align-items: center;
   padding: 0 43px 0 0;
   border: none;
   height: 100px;
   background-color: #F0F0F0;
 }
 
-.delivery-section:hover .delivery-icon-wrapper {
-  background: #FFC700;
+.delivery-section:hover .delivery-icon {
+  background-color: #FFC700;
 }
 
 .delivery-section:active {
@@ -749,19 +750,16 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-.delivery-icon-wrapper {
+.delivery-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 125px;
   height: 100%;
-  background: #FFE17F;
-}
-
-.delivery-icon {
-  width: 47px;
-  height: 31px;
+  background-color: #FFE17F;
   background-image: url('../images/icons-car.svg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .delivery-section-item {
@@ -775,19 +773,11 @@ body {
   text-transform: uppercase;
 }
 
-.delivery-notice-wrapper {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
 .delivery-notice {
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
   border-radius: 50%;
   background: rgba(220, 220, 220, 0.5);
   background-image: url('../images/icons-notice.svg');
